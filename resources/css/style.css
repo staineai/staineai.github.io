@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial;
+}
+
+a {
+  color: #0A3833;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  background: url('resources/images/basecamp.jpg');
+}
