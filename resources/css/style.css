@@ -1,50 +1,66 @@
-body {
-  margin: 0;
-  font-family: Arial;
+html {
+  font-family: "Cabin";
+  font-size: 18px;
 }
 
 a {
-  color: white;
+  color: #F4FFFD;
+  text-decoration: none;
 }
 
-.welcome {
+a:hover {
+  color: #8CD7D8;
+}
+
+strong {
+  color: #DB5461;
+  font-family: "Lora";
+}
+
+header {
+  align-items: flex-start;
+  background-image: url('images/basecamp.jpg');
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: space-between;
-  background: url('images/basecamp.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 750px;
+  height: 100vh;
 }
 
-.welcome nav {
+header nav {
+  background-color: rgba(70, 83, 98, 0.4);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 750px;
-  width: 70px;
-  background-color: rgba(100,100,100,0.5);
-  font-size: 20px;
+  height: 100%;
 }
 
-.welcome nav span {
-  padding: 50px 0px;
-  transform: rotate(270deg);
+header nav span {
+  padding: 2rem 0.5rem;
 }
 
 .headline {
-  width: 250px;
-  height: 250px;
-  margin-top: 50px;
-  margin-right: 50px;
-  color: white;
-  background-color: rgba(100,100,100,0.5);
+  background-color: rgba(70, 83, 98, 0.4);
+  margin: 2rem;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.headline h1 {
+  color: #F4FFFD;
+  font-family: "Lora";
+  font-size: 10rem;
+  margin: 0 auto;
 }
 
 .headline h2 {
-  padding-left: 20px;
+  color: #F4FFFD;
+  font-size: 2rem;
+  margin: 0 auto 0.5rem auto;
 }
 
 .headline h4 {
-  padding-left: 20px; 
+  color: #F4FFFD;
+  font-size: 1.25rem;
+  margin: 0 auto;
 }
