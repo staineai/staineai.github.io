@@ -1,66 +1,236 @@
+/*
+Colors:
+Dark green: #0A3833 (10, 56, 51)
+Teal: #6DB5AA (109, 181, 170)
+Mint Green: #AFD6D0 (175, 214, 208)
+Dark Gray: #494854 (73, 72, 84)
+Light Gray: #9B9BA1 (155, 155, 161)
+Font 1: Cabin
+Font 2: Lora
+*/
+
+/* Universal Styles */
 html {
   font-family: "Cabin";
   font-size: 18px;
 }
 
-a {
-  color: #F4FFFD;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #8CD7D8;
+h1 {
+  font-family: 'Lora';
 }
 
 strong {
-  color: #DB5461;
-  font-family: "Lora";
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
-header {
-  align-items: flex-start;
-  background-image: url('images/basecamp.jpg');
+.image-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Welcome page styles */
+.jumbotron {
+  background-image: url('images/himalayas.jpg');
   background-position: center;
   background-size: cover;
-  display: flex;
-  justify-content: space-between;
   height: 100vh;
+  margin-bottom: 0;
 }
 
-header nav {
-  background-color: rgba(70, 83, 98, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+.navbar {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  margin-top: -2rem;
 }
 
-header nav span {
-  padding: 2rem 0.5rem;
+.navbar .btn {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  margin: -0.6rem;
+}
+
+.material-icons {
+  color: rgba(10, 56, 51, 0.75);
+}
+
+.navbar-nav {
+  display: none;
+}
+
+.navbar-header:hover + .navbar-nav {
+  display: block;
+}
+
+.navbar-nav:hover {
+  display: block;
+}
+
+.jumbotron .navbar .navbar-nav li a {
+  color: white;
+}
+
+.jumbotron .navbar .navbar-nav li a:hover {
+  color: rgba(10, 56, 51, 0.75);
 }
 
 .headline {
-  background-color: rgba(70, 83, 98, 0.4);
-  margin: 2rem;
-  padding: 1rem 3rem;
+  background-color: rgba(10, 56, 51, 0.5);
+  margin: auto;
+  margin-top: 3rem;
+  padding: 1rem;
   text-align: center;
+  width: 40%;
 }
 
 .headline h1 {
-  color: #F4FFFD;
-  font-family: "Lora";
+  color: white;
   font-size: 10rem;
-  margin: 0 auto;
 }
 
-.headline h2 {
-  color: #F4FFFD;
-  font-size: 2rem;
-  margin: 0 auto 0.5rem auto;
+.headline p {
+  color: white;
+  font-size: 1.5rem;
 }
 
-.headline h4 {
-  color: #F4FFFD;
-  font-size: 1.25rem;
-  margin: 0 auto;
+/* Work section styles */
+#work {
+  display: flex;
+  flex-direction: column;
+}
+
+#work.container-fluid {
+  padding: 0;
+}
+
+#work h1 {
+  color: #494854;
+  background-color: #6DB5AA;
+  font-size: 4rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+.projects {
+  background: repeating-linear-gradient(
+    180deg,
+    #fff,
+    #fff 33.5%,
+    rgba(10, 56, 51, 0.9) 33.5%,
+    rgba(10, 56, 51, 0.9) 67%);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.project {
+  background-color: #AFD6D0;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 40%;
+}
+
+.project h2 {
+  color: white;
+  font-family: 'Lora';
+}
+
+.project p {
+  flex: 1;
+}
+
+.project .btn {
+  background-color: rgba(155, 155, 161, 0.75);
+  color: white;
+  margin: auto;
+}
+
+.project .btn:hover {
+  background-color: rgba(155, 155, 161, 0.9);
+}
+
+/* About section styles */
+#about {
+  background-color: rgba(73, 72, 84, 0.9);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.half {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
+  width: 50%;
+}
+
+.half .image-container {
+  align-self: flex-end;
+  background-color: #AFD6D0;
+  margin: 2rem  3rem;
+  padding: 2rem;
+  width: 50%;
+}
+.half h1 {
+  font-size: 3rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
+  width: 40%;
+}
+.half p {
+  font-size: 0.9rem;
+  width: 50%;
+}
+
+#about .btn {
+  background-color: rgba(10, 56, 51, 0.75);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#about .btn:hover {
+  background-color: rgba(10, 56, 51, 0.9);
+}
+
+/* Contact section style */
+
+#contact h1 {
+  color: rgba(109, 181, 170, 0.75);
+  text-align: center;
+  margin: 1rem auto;
+}
+#contact ul{
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0 3rem 0;
+}
+
+#contact ul li {
+  color: rgba(155, 155, 161, 0.75);
+  flex: 1;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+#contact ul li:hover {
+  color: rgba(10, 56, 51, 0.9);
+}
+
+#contact .fa {
+  color: rgba(155, 155, 161, 0.75);
+}
+
+#contact .fa:hover {
+  color: rgba(10, 56, 51, 0.9);
 }

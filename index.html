@@ -4,42 +4,86 @@
 
     <title>Amber Staines</title>
     <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Lora" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
   <body>
 
-    <header>
-      <nav>
-        <span><a class="side-nav" href="#work">work</a></span>
-        <span><a class="side-nav" href="#about">about</a></span>
-        <span><a class="side-nav" href="#contact">contact</a></span>
+    <div class="jumbotron jumbotron-fluid">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <div class="btn">
+                <i class="material-icons">menu</i>
+              </div>
+            </div>
+          </div>
+          <ul class="nav navbar-nav">
+            <li><a href="#work">work</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
       </nav>
-      <div class="headline">
-        <h1>AS</h1>
-        <h2>amber staines</h2>
-        <h4>web development</h4>
-        <h4><strong>AS</strong> it should be</h4>
-      </div>
-    </header>
 
-    <div id="work">
-      <div class="container">
-        <h1>Work</h1>
-        <div class="work-content">
-          <div class="data-science">
-            <h2>Data Science</h2>
-            <h3>Automated Outliers Detection Model for Lumere</h3>
-          </div>
-          <div class="web-dev">
-            <h2>Web Development</h2>
-            <h3>Colmar Academy</h3>
-          </div>
+      <div class="container-fluid">
+        <div class="headline">
+          <h1>AS</h1>
+          <p>data science + web development</p>
+          <p><strong>as</strong> it should be</p>
         </div>
       </div>
     </div>
 
+    <div class="container-fluid" id="work">
+      <h1>work</h1>
+      <div class="projects">
+        <div class="project">
+          <div class="image-container">
+            <img src="./resources/css/images/Colmar-Academy-Mockup.png">
+          </div>
+          <h2>automated outliers detection for lumere</h2>
+          <p>Data analysts at lumere needed a way to quickly identify and exclude outliers from clients' data. I built an outlier detection model with a twist that accomplished this task with greater than 90% accuracy.</p>
+          <div class="btn">see more</div>
+        </div>
+        <div class="project">
+          <div class="image-container">
+            <img src="./resources/css/images/Colmar-Academy-Mockup.png">
+          </div>
+          <h2>virtual running coach web application</h2>
+          <p>How long should I run for today? What kind of running workout should I do today? This web application applies machine learning to help users answer these questions. Import your running activity from Strava and let the virtual coach tell you what to do!</p>
+          <div class="btn">see more</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="about">
+      <div class="half">
+        <div class="image-container">
+          <img src="./resources/css/images/about.jpg">
+        </div>
+      </div>
+      <div class="half">
+        <h1>Hi! I'm Amber Staines</h1>
+        <p>I'm a data scientist and aspiring web developer based in Chicago. I love running, painting, and exploring new places. I also love using data to make people's lives better! I'm currently at Lumere figuring out how to give data analysts a little extra time by automating data transformations and clean up.</p>
+      </div>
+      <div class="btn">resume</div>
+    </div>
+
+    <div class="container-fluid" id="contact">
+      <h1>get in touch</h1> 
+      <ul>
+        <li><i class="fa fa-map-marker" style="font-size:18px"></i> Chicago, IL</li>
+        <li><i class="fa fa-envelope" style="font-size:18px"></i> amber.i.staines@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/amber-s-79164474/" target="_blank"><i class="fa fa-linkedin" style="font-size:20px"></i></a></li>
+        <li><a href="https://github.com/staineai" target="_blank"><i class="fa fa-github" style="font-size:20px"></i></a></li>
+      </ul>
+    <div>
 
   </body>
 </html>
