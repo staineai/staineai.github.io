@@ -3,8 +3,8 @@ Colors:
 Dark green: #0A3833 (10, 56, 51)
 Teal: #6DB5AA (109, 181, 170)
 Mint Green: #AFD6D0 (175, 214, 208)
-Dark Gray: #494854 (73, 72, 84)
-Light Gray: #9B9BA1 (155, 155, 161)
+Dark Gray: #1C1C1C 	(28, 28, 28)
+Light Gray: #B2B2B2 (178, 178, 178)
 Font 1: Cabin
 Font 2: Lora
 */
@@ -111,8 +111,8 @@ strong {
 }
 
 #work h1 {
-  color: #494854;
-  background-color: #6DB5AA;
+  color: white;
+  background-color: rgba(10, 56, 51, 0.9);
   font-size: 4rem;
   margin: 0;
   padding: 1rem;
@@ -124,15 +124,15 @@ strong {
     180deg,
     #fff,
     #fff 33.5%,
-    rgba(10, 56, 51, 0.9) 33.5%,
-    rgba(10, 56, 51, 0.9) 67%);
+    #AFD6D0 33.5%,
+    #AFD6D0 67%);
   display: flex;
   justify-content: space-around;
   padding: 1rem 0;
 }
 
 .project {
-  background-color: #AFD6D0;
+  background-color: #B2B2B2;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -149,18 +149,18 @@ strong {
 }
 
 .project .btn {
-  background-color: rgba(155, 155, 161, 0.75);
+  background-color: rgba(10, 56, 51, 0.7);
   color: white;
   margin: auto;
 }
 
 .project .btn:hover {
-  background-color: rgba(155, 155, 161, 0.9);
+  background-color: rgba(10, 56, 51, 0.9);
 }
 
 /* About section styles */
 #about {
-  background-color: rgba(73, 72, 84, 0.9);
+  background-color: rgba(28, 28, 28, 0.9);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -194,13 +194,13 @@ strong {
 }
 
 #about .btn {
-  background-color: rgba(10, 56, 51, 0.75);
+  background-color: #B2B2B2;
   color: white;
   margin-bottom: 2rem;
 }
 
 #about .btn:hover {
-  background-color: rgba(10, 56, 51, 0.9);
+  background-color: #AFD6D0;
 }
 
 /* Contact section style */
@@ -217,20 +217,16 @@ strong {
 }
 
 #contact ul li {
-  color: rgba(155, 155, 161, 0.75);
+  color: #B2B2B2;
   flex: 1;
   font-size: 0.75rem;
   text-align: center;
 }
 
-#contact ul li:hover {
+#contact ul li i:hover {
   color: rgba(10, 56, 51, 0.9);
 }
 
 #contact .fa {
   color: rgba(155, 155, 161, 0.75);
-}
-
-#contact .fa:hover {
-  color: rgba(10, 56, 51, 0.9);
 }
