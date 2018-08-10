@@ -15,7 +15,7 @@ html {
   font-size: 18px;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Lora';
 }
 
@@ -141,7 +141,6 @@ strong {
 
 .project h2 {
   color: white;
-  font-family: 'Lora';
 }
 
 .project p {
@@ -160,10 +159,16 @@ strong {
 
 /* About section styles */
 #about {
+  align-items: center;
   background-color: rgba(28, 28, 28, 0.9);
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
+}
+
+.about-section {
+  display: flex;
+  width: 100%;
 }
 
 .half {
@@ -191,6 +196,45 @@ strong {
 .half p {
   font-size: 0.9rem;
   width: 50%;
+}
+
+.skills {
+  background-color: rgba(10, 56, 51, 0.9);
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills h2 {
+  margin-bottom: 1rem;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.skill p {
+  flex: 1;
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-align: right;
+}
+
+.skill-level {
+  flex: 1;
+  margin: 0.5rem;
+  text-align: left;
+}
+
+.skill-level i {
+  padding-right: 1rem;
 }
 
 #about .btn {
