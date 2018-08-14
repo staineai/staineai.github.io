@@ -46,13 +46,13 @@ strong {
 }
 
 .navbar {
-  background-color: rgba(0,0,0,0);
+  background-color: transparent;
   border: none;
   margin-top: -2rem;
 }
 
 .navbar .btn {
-  background-color: rgba(0,0,0,0);
+  background-color: transparent;
   border: none;
   margin: -0.6rem;
 }
@@ -273,4 +273,21 @@ strong {
 
 #contact .fa {
   color: rgba(155, 155, 161, 0.75);
+}
+
+/* Header styles */
+header {
+  background-color: rgba(28, 28, 28, 0.75);
+}
+
+header .navbar {
+  margin-top: 0;
+}
+
+header .navbar .navbar-nav li a {
+  color: white;
+}
+
+header .navbar .navbar-nav li a:hover {
+  color: rgba(10, 56, 51, 0.75);
 }
